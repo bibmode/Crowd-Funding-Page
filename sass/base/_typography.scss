@@ -1,0 +1,155 @@
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 18px;
+}
+
+.navigation {
+  color: $color-white;
+  display: inline-block;
+  padding: 2rem 10rem;
+  width: 100%;
+
+  &__title {
+    display: inline-block;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  &__links {
+    float: right;
+  }
+
+  &__choice {
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.card {
+  color: $color-dark;
+
+  &__fund-name {
+    text-align: center;
+    font-weight: 700;
+    font-size: $big-bold-text;
+
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    text-align: center;
+    color: $color-grey;
+    font-weight: 400;
+    margin-top: 0;
+  }
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: $button-text;
+  color: $color-white;
+
+  &__bookmark {
+    font-weight: 700;
+    color: $color-grey;
+
+    &--green {
+      color: $color-primary;
+    }
+  }
+}
+
+.progress {
+  &__table {
+    text-align: left;
+  }
+
+  &__bold {
+    margin: 0;
+    font-weight: 700;
+    font-size: $big-bold-text;
+  }
+
+  &__thin {
+    margin: 0;
+    margin-top: 0.3rem;
+    font-weight: 400;
+    color: $color-grey;
+  }
+}
+
+.offer {
+  &__name--popup {
+    width: max-content;
+    font-size: 1rem;
+  }
+
+  &__pledge {
+    text-align: right;
+    color: $color-secondary;
+
+    &--popup {
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+
+  &__price--num {
+    line-height: 1.5;
+
+    span {
+      font-size: $button-text;
+      color: $color-grey;
+    }
+  }
+
+  &__price--popup {
+    float: right;
+    text-align: right;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: -0.6rem;
+
+    span {
+      margin-left: 1rem;
+      font-size: 1rem;
+      color: $color-grey;
+    }
+  }
+}
+
+.about {
+  &__heading-text {
+    margin-top: 0.5;
+  }
+}
+
+.amount {
+  &__text {
+    color: $color-grey;
+  }
+
+  &__input {
+    color: $color-black;
+
+    &:active {
+      outline: none;
+    }
+
+    &--label {
+      color: $color-grey;
+      font-weight: 700;
+    }
+  }
+}

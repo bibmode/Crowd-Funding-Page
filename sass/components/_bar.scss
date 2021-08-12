@@ -1,0 +1,15 @@
+.progress__bar {
+  display: block;
+  height: 0.7rem;
+  width: 100%;
+  border-radius: 5rem;
+  background-color: $color-light-grey;
+
+  &--front {
+    display: block;
+    height: 0.7rem;
+    width: 89.914%;
+    border-radius: 5rem;
+    background-color: $color-secondary;
+  }
+}

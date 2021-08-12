@@ -1,0 +1,149 @@
+.card {
+  display: block;
+  position: absolute;
+  width: 46rem;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  background-color: $color-white;
+  border: 1px solid rgba($color-light-grey, 0.5);
+
+  &__header {
+    top: -6rem;
+  }
+
+  &__progress {
+    top: 12.7rem;
+  }
+
+  &__main {
+    top: 26.8rem;
+    padding-bottom: 3rem;
+    margin-bottom: 100px;
+  }
+}
+
+.offer {
+  &__card {
+    position: relative;
+    border: 2px solid $color-light-grey;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-top: 1.5rem;
+
+    &--grey {
+      opacity: 0.5;
+    }
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  &__name {
+    margin-top: 0;
+    float: left;
+
+    &--popup {
+      width: max-content;
+      margin-left: 3rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__pledge {
+    width: 35%;
+    margin-top: 0;
+    float: right;
+
+    &--popup {
+      float: left;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    margin: 0;
+    margin-left: 3rem;
+  }
+
+  &__price {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1.3rem;
+  }
+
+  &__price--num {
+    float: left;
+    margin: 0;
+
+    span {
+      position: absolute;
+      margin: 0.8rem 0.5rem;
+    }
+  }
+
+  &__btn {
+    float: right;
+  }
+}
+
+.popup {
+  &__card {
+    margin-top: 10%;
+  }
+
+  &__close {
+    position: absolute;
+    right: 2rem;
+    fill: $color-dark;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.amount {
+  padding-top: 1.5rem;
+
+  &__line {
+    position: absolute;
+    border: 1px solid $color-light-grey;
+    left: 0;
+    right: 0;
+  }
+
+  &__text {
+    display: inline-block;
+  }
+
+  &__right {
+    float: right;
+    margin-top: 1rem;
+  }
+
+  &__input {
+    width: 7rem;
+    border: 1px solid $color-primary;
+
+    &--container {
+      display: inline-block;
+      position: relative;
+      width: max-content;
+    }
+
+    &--label {
+      position: absolute;
+      left: 1.5rem;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__btn {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+.space {
+  height: 300px;
+}
+
+.popup {
+  &__container {
+    position: absolute;
+    width: 100%;
+    height: 250%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 3000;
+    display: none;
+  }
+}

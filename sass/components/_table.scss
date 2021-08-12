@@ -1,0 +1,18 @@
+.progress {
+  &__table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  &__cell {
+    margin: 0;
+
+    &:not(:first-child) {
+      padding: 0 2rem;
+    }
+
+    &:not(:last-child) {
+      border-right: 2px solid $color-light-grey;
+    }
+  }
+}

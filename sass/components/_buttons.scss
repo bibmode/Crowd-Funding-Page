@@ -1,0 +1,33 @@
+.btn {
+  border-radius: 50rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+
+  &--green {
+    background-color: $color-primary;
+  }
+
+  &--teal {
+    background-color: $color-secondary;
+  }
+
+  &--grey {
+    background-color: $color-grey;
+  }
+
+  &__bookmark {
+    padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+  }
+}
+
+.bookmark {
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+}
