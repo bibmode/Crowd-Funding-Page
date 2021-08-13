@@ -47,7 +47,7 @@
 
     &--popup {
       width: max-content;
-      margin-left: 3rem;
+      margin-left: 1.4rem;
       margin-right: 1rem;
     }
   }
@@ -66,31 +66,34 @@
     display: inline-block;
     margin: 0;
     margin-left: 3rem;
+
+    &--free {
+      margin-bottom: 10px;
+    }
   }
 
   &__price {
     display: inline-block;
     width: 100%;
     margin-top: 1.3rem;
-  }
-
-  &__price--num {
-    float: left;
-    margin: 0;
 
     span {
+      font-weight: 500;
+      color: $color-grey;
       position: absolute;
       margin: 0.8rem 0.5rem;
     }
   }
 
-  &__btn {
-    float: right;
+  &__price--num {
+    float: left;
+    margin: 0;
   }
 }
 
 .popup {
   &__card {
+    //position: fixed;
     margin-top: 10%;
   }
 
@@ -106,44 +109,11 @@
   }
 }
 
-.amount {
-  padding-top: 1.5rem;
-
-  &__line {
-    position: absolute;
-    border: 1px solid $color-light-grey;
-    left: 0;
-    right: 0;
-  }
-
-  &__text {
-    display: inline-block;
-  }
-
-  &__right {
-    float: right;
-    margin-top: 1rem;
-  }
-
-  &__input {
-    width: 7rem;
-    border: 1px solid $color-primary;
-
-    &--container {
-      display: inline-block;
-      position: relative;
-      width: max-content;
-    }
-
-    &--label {
-      position: absolute;
-      left: 1.5rem;
-      top: 50%;
-      transform: translate(0, -50%);
-    }
-  }
-
-  &__btn {
-    margin-left: 1rem;
+.thanks {
+  &__card {
+    position: fixed;
+    top: 25%;
+    width: 34rem;
+    text-align: center;
   }
 }

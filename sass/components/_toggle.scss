@@ -1,0 +1,81 @@
+.amount {
+  padding-top: 1.5rem;
+
+  &__line {
+    position: absolute;
+    border: 1px solid $color-light-grey;
+    left: 0;
+    right: 0;
+    bottom: 6.5rem;
+  }
+
+  &__text {
+    display: inline-block;
+  }
+
+  &__right {
+    float: right;
+    margin-top: 1rem;
+  }
+
+  &__input {
+    width: 7rem;
+    border: 1px solid $color-primary;
+
+    &--container {
+      display: inline-block;
+      position: relative;
+      width: max-content;
+    }
+
+    &--label {
+      position: absolute;
+      left: 1.5rem;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__btn {
+    margin-left: 1rem;
+  }
+
+  &__center {
+    position: absolute;
+    margin-top: 1.3rem;
+    margin-left: 44%;
+    transform: translate(-50%);
+  }
+}
+
+#amount {
+  &__1 {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+
+  &__2 {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+
+  &__4 {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+
+  &__5 {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+
+  &__6 {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+  }
+}

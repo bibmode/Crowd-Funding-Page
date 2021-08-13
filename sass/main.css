@@ -12,6 +12,19 @@ html {
           box-sizing: inherit;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+}
+
 body {
   height: 100%;
   line-height: 1.8;
@@ -109,10 +122,8 @@ body {
 }
 
 .offer__name--popup {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   font-size: 1rem;
+  margin-left: 0;
 }
 
 .offer__pledge {
@@ -146,6 +157,18 @@ body {
   margin-left: 1rem;
   font-size: 1rem;
   color: #7a7a7a;
+}
+
+.offer__num {
+  position: absolute;
+  right: 4.7rem;
+}
+
+.offer__num--span {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7a7a7a;
+  float: right;
 }
 
 .about__heading-text {
@@ -212,6 +235,15 @@ body {
   display: none;
 }
 
+.thanks__container {
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 7000;
+  display: none;
+}
+
 .btn {
   border-radius: 50rem;
   border: none;
@@ -235,6 +267,10 @@ body {
   padding: 1.2rem 1.5rem 1.2rem 3.5rem;
 }
 
+.btn__thanks {
+  margin: 1rem 0;
+}
+
 .bookmark {
   position: relative;
   float: right;
@@ -244,6 +280,10 @@ body {
 .button {
   margin-top: 2rem;
   margin-bottom: 0.7rem;
+}
+
+.offer__btn {
+  float: right;
 }
 
 .card {
@@ -298,7 +338,7 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin-left: 3rem;
+  margin-left: 1.4rem;
   margin-right: 1rem;
 }
 
@@ -318,24 +358,26 @@ body {
   margin-left: 3rem;
 }
 
+.offer__info--free {
+  margin-bottom: 10px;
+}
+
 .offer__price {
   display: inline-block;
   width: 100%;
   margin-top: 1.3rem;
 }
 
-.offer__price--num {
-  float: left;
-  margin: 0;
-}
-
-.offer__price--num span {
+.offer__price span {
+  font-weight: 500;
+  color: #7a7a7a;
   position: absolute;
   margin: 0.8rem 0.5rem;
 }
 
-.offer__btn {
-  float: right;
+.offer__price--num {
+  float: left;
+  margin: 0;
 }
 
 .popup__card {
@@ -353,49 +395,11 @@ body {
   opacity: 1;
 }
 
-.amount {
-  padding-top: 1.5rem;
-}
-
-.amount__line {
-  position: absolute;
-  border: 1px solid #f0f0f0;
-  left: 0;
-  right: 0;
-}
-
-.amount__text {
-  display: inline-block;
-}
-
-.amount__right {
-  float: right;
-  margin-top: 1rem;
-}
-
-.amount__input {
-  width: 7rem;
-  border: 1px solid #147b74;
-}
-
-.amount__input--container {
-  display: inline-block;
-  position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.amount__input--label {
-  position: absolute;
-  left: 1.5rem;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
-
-.amount__btn {
-  margin-left: 1rem;
+.thanks__card {
+  position: fixed;
+  top: 25%;
+  width: 34rem;
+  text-align: center;
 }
 
 .icon {
@@ -487,5 +491,89 @@ body {
   top: 3px;
   left: 3px;
   z-index: 4000;
+}
+
+.amount {
+  padding-top: 1.5rem;
+}
+
+.amount__line {
+  position: absolute;
+  border: 1px solid #f0f0f0;
+  left: 0;
+  right: 0;
+  bottom: 6.5rem;
+}
+
+.amount__text {
+  display: inline-block;
+}
+
+.amount__right {
+  float: right;
+  margin-top: 1rem;
+}
+
+.amount__input {
+  width: 7rem;
+  border: 1px solid #147b74;
+}
+
+.amount__input--container {
+  display: inline-block;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.amount__input--label {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.amount__btn {
+  margin-left: 1rem;
+}
+
+.amount__center {
+  position: absolute;
+  margin-top: 1.3rem;
+  margin-left: 44%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#amount__1 {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}
+
+#amount__2 {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}
+
+#amount__4 {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}
+
+#amount__5 {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}
+
+#amount__6 {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

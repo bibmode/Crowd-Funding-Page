@@ -10,6 +10,19 @@ html {
   box-sizing: inherit;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+}
+
 body {
   height: 100%;
   line-height: 1.8;
