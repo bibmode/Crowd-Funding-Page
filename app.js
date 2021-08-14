@@ -1,5 +1,7 @@
 "use strict";
 
+import "./sass/main.scss";
+
 const bookmark = document.querySelector("#bookmark");
 const iconGreen = document.querySelector("#icon__bookmark--green");
 const iconGrey = document.querySelector("#icon__bookmark--grey");

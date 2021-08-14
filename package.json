@@ -1,0 +1,27 @@
+{
+  "name": "crowd-funding-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibmode/Crowd-Funding-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bibmode/Crowd-Funding-Page/issues"
+  },
+  "homepage": "https://github.com/bibmode/Crowd-Funding-Page#readme",
+  "devDependencies": {
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-modules": "^4.2.2"
+  }
+}
