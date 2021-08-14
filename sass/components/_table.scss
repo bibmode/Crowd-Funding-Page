@@ -16,3 +16,38 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .progress {
+    &__table {
+      width: 100%;
+      table-layout: fixed;
+      text-align: center;
+      transform: translateY(-1rem);
+    }
+
+    &__cell {
+      margin: 0;
+      display: block;
+      border-width: 50px;
+      padding: 1rem 0;
+
+      &:not(:first-child) {
+        padding: 0.8rem 0;
+      }
+
+      &:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid $color-light-grey;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

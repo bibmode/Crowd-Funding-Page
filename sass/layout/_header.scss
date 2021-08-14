@@ -4,4 +4,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  text-align: center;
+}
+
+//mobile
+@media screen and (max-width: 500px) {
+  .header {
+    height: 15rem;
+  }
 }

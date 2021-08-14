@@ -11,6 +11,7 @@ body {
 
   &__title {
     display: inline-block;
+    float: left;
   }
 
   &__text {
@@ -163,6 +164,147 @@ body {
     &--label {
       color: $color-grey;
       font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    width: 90%;
+
+    &__text {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    &__links {
+      float: right;
+    }
+
+    &__choice {
+      display: inline-block;
+      font-size: 1.5rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  .offer {
+    &__name--popup {
+      font-size: 1.3rem;
+      margin-top: -1rem;
+    }
+
+    &__pledge {
+      &--popup {
+        font-size: 1.3rem;
+      }
+    }
+
+    &__price--num {
+      span {
+        font-size: 2;
+      }
+    }
+
+    &__price--popup {
+      font-size: 1.5rem;
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    &__num {
+      &--span {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+//mobile
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    padding: 0 20px;
+
+    &__text {
+      float: left;
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    &__links {
+      display: none;
+    }
+  }
+
+  .offer {
+    &__name {
+      width: 100%;
+
+      &--popup {
+        font-size: 1.3rem;
+        margin-top: -1rem;
+      }
+    }
+
+    &__price {
+    }
+
+    &__pledge {
+      text-align: left;
+
+      &--popup {
+        font-size: 1.3rem;
+      }
+    }
+
+    &__price--num {
+      span {
+        font-size: 2;
+      }
+    }
+
+    &__price--popup {
+      font-size: 1.5rem;
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    &__num {
+      &--span {
+        font-size: 1rem;
+      }
+    }
+
+    &__info {
+      &--height-fix {
+        height: auto;
+      }
+    }
+  }
+
+  .about {
+    &__heading-text {
+      margin-top: 0;
     }
   }
 }

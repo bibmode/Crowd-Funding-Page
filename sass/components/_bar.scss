@@ -13,3 +13,9 @@
     background-color: $color-secondary;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .progress__bar {
+    transform: translateY(-1rem);
+  }
+}

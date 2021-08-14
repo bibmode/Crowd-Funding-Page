@@ -41,3 +41,15 @@
     float: right;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .btn__bookmark {
+    display: none;
+  }
+
+  .offer {
+    &__btn {
+      float: left;
+    }
+  }
+}

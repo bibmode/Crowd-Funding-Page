@@ -5,6 +5,7 @@ const iconGreen = document.querySelector("#icon__bookmark--green");
 const iconGrey = document.querySelector("#icon__bookmark--grey");
 const progressBar = document.querySelector(".progress__bar--front");
 const progressText = document.querySelector(".progress__bold");
+const progressBack = document.querySelector("#progress_backup");
 
 const suppBtn = document.querySelector("#btn__support");
 const freeBtn = document.querySelector("#btn__free");
@@ -27,7 +28,8 @@ let count = 1,
   numOpen,
   numClose;
 
-let amountProgress = 89914;
+let amountProgress = 89914,
+  amountBack = 5007;
 let arr = [0, 25, 75, 10000 - 8914, 25, 75, 10000 - 8914];
 
 checkboxes.forEach(function (btn, i) {
@@ -72,9 +74,13 @@ function toggleHide(num) {
   }
 }
 
-freeBtn.addEventListener("click", function () {
+function showThanks() {
   popup.style.display = "none";
   thanks.style.display = "block";
+}
+
+freeBtn.addEventListener("click", function () {
+  showThanks();
 });
 
 thanksBtn.addEventListener("click", function () {
@@ -171,6 +177,7 @@ function amountValidation(amount, open, add) {
 
     uncheck();
     toggleHide(open);
+    showThanks();
   }
 
   if (amount >= arr[open + 1]) {
@@ -186,11 +193,13 @@ function amountValidation(amount, open, add) {
 
 function updateProgress(amount) {
   amountProgress += amount;
+  amountBack++;
 
   const percentage = (amountProgress / 100000) * 100;
   progressBar.style.width = `${percentage}%`;
 
   progressText.innerHTML = `$${amountProgress.toLocaleString()}`;
+  progressBack.innerHTML = `${amountBack.toLocaleString()}`;
 }
 
 //bookmark
